@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@500&display=swap');
+* {
+    
+font-family: Noto Sans;
+
+}
+
+
+.padre {
+    padding-top: 60px;
+ display: flex;
+ align-items: center;
+ justify-content: center;   
+}
+
+.form-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 24px;
+    border: 1px solid #BDBDBD;
+    width: 373.831px;
+    height: 400.303px;
+    flex-shrink: 0;
+}
+
+.containerlogin {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  width: 250px;
+}
+
+.icono-dev {
+    width: 100px;
+}
+
+.secondp {
+    color: #333;
+font-family: Noto Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.63px;
+}
+
+.thirdp {
+    color: #333;
+font-family: Noto Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.56px;
+}
+
+input {
+   border-color: transparent;
+   
+}
+
+.container-inputs {
+
+   
+}
+
+.container-email {
+    padding-bottom: 10px;
+}
+
+.email > :first-child {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.password > :first-child {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+.email {
+    padding-top: 2px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    display: flex;
+    height: 30px;
+    width: 256.481px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #BDBDBD;
+}
+
+.container-password {
+    padding-bottom: 10px;
+}
+
+.password {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  
+    display: flex;
+    width: 256.481px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #BDBDBD;
+}
+
+.boton-crear > :first-child {
+    color: #FFF;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.56px;
+    border-radius: 8px;
+    background: var(--blue-1, #2F80ED);
+    width: 261.481px;
+    height: 28px;
+    flex-shrink: 0;
+    border-color: transparent;
+}
+
+.container-loginmethods {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+}
+
+.container-loginmethods > :first-child {
+    color: #828282;
+font-family: Noto Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.49px;
+
+}
+
+.container-loginmethods > :last-child {
+    color: #828282;
+text-align: center;
+font-family: Noto Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.49px;
+} 
+
+.redirection {
+    text-decoration: none;
+    color: #2D9CDB;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.49px;
+}
+
+.container-socialmedias {
+    color: #828282;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-logos-socialmedias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #828282 ;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
