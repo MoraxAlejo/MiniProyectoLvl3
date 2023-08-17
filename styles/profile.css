@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@500&display=swap");
+
 li {
   list-style-type: none;
 }
@@ -93,7 +95,7 @@ li {
 }
 
 .contenedor-edit {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 
 .edit-info {
@@ -119,88 +121,86 @@ li {
 }
 
 .con-photo {
-    color: #BDBDBD;
-font-family: Noto Sans;
-font-size: 13px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.455px;
-    gap: 120px;
-    display: flex;
-    padding-left: 30px;
-    padding-top: 15px;
+  color: #bdbdbd;
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.455px;
+  gap: 120px;
+  display: flex;
+  padding-left: 30px;
+  padding-top: 15px;
 }
 
 .con-name {
-    color: #BDBDBD;
-font-family: Noto Sans;
-font-size: 13px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.455px;
-    gap: 125px;
-    display: flex;
-    padding-left: 30px;
+  color: #bdbdbd;
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.455px;
+  gap: 125px;
+  display: flex;
+  padding-left: 30px;
 }
 
-
 .con-bio {
-    color: #BDBDBD;
-font-family: Noto Sans;
-font-size: 13px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.455px;
-    gap: 145px;
-    display: flex;
-    padding-left: 30px;
+  color: #bdbdbd;
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.455px;
+  gap: 145px;
+  display: flex;
+  padding-left: 30px;
 }
 
 .con-phone {
-    color: #BDBDBD;
-font-family: Noto Sans;
-font-size: 13px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.455px;
-    gap: 120px;
-    display: flex;
-    padding-left: 30px;
+  color: #bdbdbd;
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.455px;
+  gap: 120px;
+  display: flex;
+  padding-left: 30px;
 }
 
 .con-mail {
-    color: #BDBDBD;
-font-family: Noto Sans;
-font-size: 13px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.455px;
-    gap: 123px;
-    display: flex;
-    padding-left: 30px;
+  color: #bdbdbd;
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.455px;
+  gap: 123px;
+  display: flex;
+  padding-left: 30px;
 }
 
 .con-pasword {
-    color: #BDBDBD;
-font-family: Noto Sans;
-font-size: 13px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.455px;
-    gap: 88px;
-    display: flex;
-    padding-left: 30px;
-    padding-top: 30px;
+  color: #bdbdbd;
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.455px;
+  gap: 88px;
+  display: flex;
+  padding-left: 30px;
+  padding-top: 30px;
 }
 
 .name {
-    
   border: solid 1px #e0e0e0;
   width: 845.384px;
 }
@@ -222,13 +222,85 @@ letter-spacing: -0.455px;
 
 .password {
   width: 845.384px;
-  
 }
 
 input {
-    border: none;
-  }
+  border: none;
+}
 
-  input:focus {
-    outline: none;
-  }
+input:focus {
+  outline: none;
+}
+
+.options {
+  padding-right: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+hr {
+  width: 124.118px;
+  background: #e0e0e0;
+}
+.options > :first-child {
+  margin-top: 50px;
+  color: var(--gray-2, #4f4f4f);
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.42px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 158px;
+  height: 174px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.boton-close {
+  color: var(--red, #eb5757);
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.42px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
+.profile {
+  display: flex;
+  gap: 10px;
+}
+
+.group-chat {
+  display: flex;
+  gap: 10px;
+}
+
+
+.boton-close {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.options-li {
+  gap: 20px;
+  position: absolute;
+  top: 0;
+  
+
+}

@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="padre">
-        <form action="conexion.php" method="post" class="form-create" id="formulary">
+        <form action="createacount.php" method="post" class="form-create" id="formulary">
         <div class="containerlogin">
         <img class="icono-dev" src="/imgs/dev.jpg" alt="">
          <p class="secondp">Join thousands of learners from around the world</p>

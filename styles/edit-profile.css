@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@500&display=swap");
+
+* {
+  font-family: Noto Sans;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 900px;
+}
+
+.icono-dev {
+  width: 100px;
+}
+
+.user-info {
+  display: flex;
+  gap: 20px;
+  color: var(--gray-1, #333);
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.42px;
+}
+
+.padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user-edit-info {
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  width: 645.911px;
+  height: 727.563px;
+  flex-shrink: 0;
+}
+
+.container-user {
+  padding-top: 30px;
+  padding-left: 60px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.container-change-info > :first-child {
+  color: #000;
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.84px;
+}
+
+.container-change-info :last-child {
+  color: #828282;
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.455px;
+}
+
+.photo {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+}
+
+.file {
+    
+}
+
+.photo > :first-child {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: url(/imgs/ganyu.jpg);
+  background-size: 110%;
+  border-color: transparent;
+ 
+}
+
+.photo > :last-child {
+  padding-top: 10px;
+  color: #828282;
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.455px;
+}
+
+.name {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nombre {
+  border-radius: 12px;
+  border: 1px solid #828282;
+  width: 416.932px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.bio {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-input {
+  border-radius: 12px;
+  border: 1px solid #828282;
+  width: 416.932px;
+  height: 62px;
+  flex-shrink: 0;
+}
+
+.phone {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-input {
+  border-radius: 12px;
+  border: 1px solid #828282;
+  width: 416.932px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.email {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-input {
+  border-radius: 12px;
+  border: 1px solid #828282;
+  width: 416.932px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.password {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.password-input {
+  border-radius: 12px;
+  border: 1px solid #828282;
+  width: 416.932px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.containerboton {
+  padding-top: 15px;
+}
+
+.botton-save {
+  border-color: transparent;
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  border-radius: 8px;
+  background: #2f80ed;
+  width: 82px;
+  height: 38px;
+  flex-shrink: 0;
+}
