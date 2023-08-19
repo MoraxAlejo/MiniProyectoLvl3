@@ -4,10 +4,10 @@ $password = $_POST["contrasena"];
 
 try {
     $mysqli = new mysqli("localhost", "root", "", "miniproyecto");
-    $consulta = $mysqli->query("SELECT * FROM `users` WHERE email = '$correo' and pasword = '$password'");
+    $consulta = $mysqli->query("SELECT * FROM `users` WHERE email = '$correo'");
     $resultado = $consulta->fetch_assoc();
    
-    if ($resultado['email'] == $correo && $resultado['pasword'] == $password) {
+    if (password_verify($password, $resultado['pasword'])) {
         session_start();
         $_SESSION['password'] = $resultado['pasword']; 
         $_SESSION['email'] =  $resultado['email'];
@@ -15,15 +15,14 @@ try {
         $_SESSION['phone'] =  $resultado['phone'];
         $_SESSION['bio'] =  $resultado['biografia'];
         $_SESSION['name'] =  $resultado['name'];
-        
         header("Location: profile.php");
         exit();
     } else {
         header("Location: login.php");
     }
 
-
 } catch(mysqli_sql_exception $e) {
     echo "Error" . $e->getMessage();
 }
+
 ?>

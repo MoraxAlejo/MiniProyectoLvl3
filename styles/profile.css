@@ -44,6 +44,7 @@ li {
 
 .user-info {
   display: flex;
+  align-items: center;
   gap: 20px;
   color: var(--gray-1, #333);
   font-family: Noto Sans;
@@ -117,7 +118,7 @@ li {
   display: flex;
   border: solid 1px #e0e0e0;
   width: 845.384px;
-  height: 70px;
+  height: 90px;
 }
 
 .con-photo {
@@ -134,6 +135,24 @@ li {
   padding-top: 15px;
 }
 
+.con-photo >:first-child {
+  padding-top: 10px;
+}
+.imagen-container {
+  padding-bottom: 20px;
+}
+.imagen-profile-nav {
+  border-radius: 8px;
+  width: 42px;
+  height: 36.69px;
+  flex-shrink: 0;
+}
+
+.imagen-profile{
+  border-radius: 8px;
+  width: 70px;
+  height: 70px;
+}
 .con-name {
   color: #bdbdbd;
   font-family: Noto Sans;
@@ -145,6 +164,16 @@ li {
   gap: 125px;
   display: flex;
   padding-left: 30px;
+}
+
+.con-name > :last-child {
+  color: #333;
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.63px;
 }
 
 .con-bio {
@@ -160,6 +189,16 @@ li {
   padding-left: 30px;
 }
 
+.con-bio >:last-child {
+  color: #333;
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.63px;
+}
+
 .con-phone {
   color: #bdbdbd;
   font-family: Noto Sans;
@@ -171,6 +210,16 @@ li {
   gap: 120px;
   display: flex;
   padding-left: 30px;
+}
+
+.con-phone > :last-child {
+  color: #333;
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.63px;
 }
 
 .con-mail {
@@ -186,6 +235,16 @@ li {
   padding-left: 30px;
 }
 
+.con-mail >:last-child {
+  color: #333;
+font-family: Noto Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.63px;
+}
+
 .con-pasword {
   color: #bdbdbd;
   font-family: Noto Sans;
@@ -198,6 +257,16 @@ li {
   display: flex;
   padding-left: 30px;
   padding-top: 30px;
+}
+
+.con-pasword > :last-child {
+  color: #333;
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.63px;
 }
 
 .name {
@@ -278,10 +347,12 @@ hr {
   border-color: transparent;
 }
 
-
 .profile {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
 }
 
 .group-chat {
@@ -289,8 +360,8 @@ hr {
   gap: 10px;
 }
 
-
 .boton-close {
+  cursor: pointer;
   padding-top: 10px;
   display: flex;
   align-items: center;
@@ -301,6 +372,64 @@ hr {
   gap: 20px;
   position: absolute;
   top: 0;
-  
+}
 
+.invisible {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-2, #4f4f4f);
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#flecha {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+li:hover {
+  border-radius: 8px;
+  background-color: #F2F2F2;
+}
+
+
+
+.profile:hover {
+  border-radius: 8px;
+  background-color: #F2F2F2;
+}
+
+.group-chat:hover {
+  border-radius: 8px;
+  background-color: #F2F2F2;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.profile-container {
+  padding-right: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.boton-close {
+  cursor: pointer;
+}
+
+.group-container {
+  padding-right: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
 }

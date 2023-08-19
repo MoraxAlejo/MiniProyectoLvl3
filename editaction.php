@@ -1,20 +1,40 @@
-<?php 
-// UPDATE users SET email = 'aleto', pasword = 'popo' WHERE id = 3;
+<?php
 session_start();
-$name = $_POST["name"] ; 
-$bio = $_POST["bio"] ;
-$phone =  $_POST["phone"] ;
-$email = $_POST["email"] ;
-$password = $_POST["password"] ;
-$id = $_SESSION ['id'];
+$name = $_POST["name"];
+$bio = $_POST["bio"];
+$phone =  $_POST["phone"];
+$email = $_POST["email"];
+$password = $_POST["password"];
+$id = $_SESSION['id'];
+require_once "conexiondatabs.php";
 
-require_once "conexiondatabs.php"; 
-$mysqli->query("UPDATE `users` SET `name` = '$name', `biografia` = '$bio', `phone` = '$phone', `email` = '$email', `pasword` = '$password' WHERE `users`.`id` = $id ;");
+$contrahash = password_hash($password,PASSWORD_DEFAULT);
+
+if (!empty($name) || !empty($bio) || !empty($phone) || !empty($password)) {
+    $query = "UPDATE `users` SET ";
+    if (!empty($name)) {
+        $query .= "`name` = '$name', ";
+        $_SESSION['name'] = $name;
+    }
+    if (!empty($bio)) {
+        $query .= "`biografia` = '$bio', ";
+        $_SESSION['bio'] = $bio;
+    }
+    if (!empty($phone)) {
+        $query .= "`phone` = '$phone', ";
+        $_SESSION['phone'] = $phone;
+    }
+    if (!empty($password)) {
+        $query .= "`pasword` = '$contrahash', ";
+        $_SESSION['pasword'] =  $password;
+    }
+    $query = rtrim($query, ", ");
+    $query .= " WHERE `users`.`id` = $id ;";
+  
+    $mysqli->query($query);
+}
+
 header("Location: profile.php");
-$_SESSION['email'] =  $email;
-$_SESSION['pswrd'] =  $password;
-$_SESSION['phone'] =  $phone;
-$_SESSION['bio'] =  $bio;
-$_SESSION['name'] =  $name;
+
 
 ?>

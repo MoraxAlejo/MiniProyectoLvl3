@@ -21,6 +21,7 @@ li {
 
 .user-info {
   display: flex;
+  align-items: center;
   gap: 20px;
   color: var(--gray-1, #333);
   font-family: Noto Sans;
@@ -29,6 +30,12 @@ li {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.42px;
+}
+.imagen-profile-nav {
+  border-radius: 8px;
+  width: 42px;
+  height: 36.69px;
+  flex-shrink: 0;
 }
 
 .padre {
@@ -83,7 +90,7 @@ li {
 }
 
 .file {
-    
+  box-shadow: inset 0 0 55px black;
 }
 
 .photo > :first-child {
@@ -94,7 +101,6 @@ li {
   background: url(/imgs/ganyu.jpg);
   background-size: 110%;
   border-color: transparent;
- 
 }
 
 .photo > :last-child {
@@ -196,4 +202,147 @@ li {
   width: 82px;
   height: 38px;
   flex-shrink: 0;
+}
+
+.options {
+  padding-right: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+hr {
+  width: 124.118px;
+  background: #e0e0e0;
+}
+.options > :first-child {
+  margin-top: 50px;
+  color: var(--gray-2, #4f4f4f);
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.42px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 158px;
+  height: 174px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.boton-close {
+  color: var(--red, #eb5757);
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.42px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+}
+
+.group-chat {
+  display: flex;
+  align-content: center;
+  
+}
+
+.boton-close {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.options-li {
+  gap: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.invisible {
+  display: none;
+}
+
+.file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invisible {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-2, #4f4f4f);
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#flecha {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+li:hover {
+  border-radius: 8px;
+  background-color: #F2F2F2;
+}
+
+
+
+.profile:hover {
+  border-radius: 8px;
+  background-color: #F2F2F2;
+}
+
+.group-chat:hover {
+  border-radius: 8px;
+  background-color: #F2F2F2;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.profile-container {
+  padding-right: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.boton-close {
+  cursor: pointer;
+}
+
+.group-container {
+  padding-right: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
 }
