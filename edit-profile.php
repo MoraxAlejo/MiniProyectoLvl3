@@ -1,5 +1,10 @@
 <?php
 session_start();
+require_once "conexiondatabs.php";
+$id = $_SESSION['id'];
+$stmt = $mysqli->query("SELECT id, photo FROM users WHERE id = '$id'  ;");
+while ($row = $stmt->fetch_assoc()) {
+    $dataImg = base64_encode($row["photo"]);
 if (!isset($_SESSION['email'])) {
     header('Location: login.php');
     exit();
@@ -26,7 +31,7 @@ if (!isset($_SESSION['email'])) {
                 </li>
                 <li class="user-info" id="close">
                     <!-- datos del usuario -->
-                    <div class="imagen-container-nav"><img class="imagen-profile-nav" src="/imgs/ganyu.jpg" alt=""> </div>
+                    <div class="imagen-container-nav"><?php echo "<img class='imagen-profile-nav' src='data:image/jpg;base64, $dataImg' alt=''>" ;} ?> </div>
                     <?php echo $_SESSION['name'] ?>
                     <!-- icono -->
                     <button id="flecha"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
@@ -82,12 +87,12 @@ if (!isset($_SESSION['email'])) {
                         <p>Changes will be reflected to every services</p>
                     </div>
 
-                    <form action="editaction.php" class="form-edit" method="post">
+                    <form action="editaction.php" enctype="multipart/form-data" class="form-edit" method="post">
                         <div class="photo">
                             <label class="file"> <svg xmlns="http://www.w3.org/2000/svg" fill = "white" width="16" height="16" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
                                     <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
                                     <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
-                                </svg> <input type="file" hidden></label>
+                                </svg> <input type="file" name="imagen" hidden ></label>
                             <p> CHANGE PHOTO</p>
                         </div>
                         <div class="name">
