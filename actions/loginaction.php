@@ -18,7 +18,9 @@ try {
         header("Location: ../profile.php");
         exit();
     } else {
-        header("Location: ../login.php");
+        echo "Correo o contraseña equivocados";
+        die();
+        
     }
 
 } catch(mysqli_sql_exception $e) {

@@ -5,8 +5,10 @@ $password = $_POST["contrasena"];
 
 try {
     require_once "../conexiondatabs.php";
-    if ($resultado['email'] == "$correo") {
-         echo "La Cuenta ya existe";
+    $consulta1 = $mysqli->query("SELECT * FROM `users` WHERE email = '$correo'");
+        $resultado1 = $consulta1->fetch_assoc();
+    if ($resultado1['email'] == "$correo") {
+         echo "La Cuenta ya existe Porfavor intente con otro correo";
          die();
     } else {
         $contrahash = password_hash($password,PASSWORD_DEFAULT);
@@ -20,7 +22,7 @@ try {
         $_SESSION['phone'] =  $resultado['phone'];
         $_SESSION['bio'] =  $resultado['biografia'];
         $_SESSION['name'] =  $resultado['name'];
-        header("location: ../profile.php");
+        header("location: ../edit-profile.php");
         exit();
     }
 } catch (mysqli_sql_exception $e) {

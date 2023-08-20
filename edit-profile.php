@@ -1,14 +1,14 @@
 <?php
 session_start();
-require_once "conexiondatabs.php";
-$id = $_SESSION['id'];
-$stmt = $mysqli->query("SELECT id, photo FROM users WHERE id = '$id'  ;");
-while ($row = $stmt->fetch_assoc()) {
-    $dataImg = base64_encode($row["photo"]);
     if (!isset($_SESSION['email'])) {
         header('Location: login.php');
         exit();
     } else {
+        require_once "conexiondatabs.php";
+$id = $_SESSION['id'];
+$stmt = $mysqli->query("SELECT id, photo FROM users WHERE id = '$id'  ;");
+while ($row = $stmt->fetch_assoc()) {
+    $dataImg = base64_encode($row["photo"]);
 ?>
 
 
