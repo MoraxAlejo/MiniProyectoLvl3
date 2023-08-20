@@ -15,10 +15,10 @@ try {
         $_SESSION['phone'] =  $resultado['phone'];
         $_SESSION['bio'] =  $resultado['biografia'];
         $_SESSION['name'] =  $resultado['name'];
-        header("Location: profile.php");
+        header("Location: ../profile.php");
         exit();
     } else {
-        header("Location: login.php");
+        header("Location: ../login.php");
     }
 
 } catch(mysqli_sql_exception $e) {

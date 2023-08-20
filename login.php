@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="padre">
-        <form action="loginaction.php" method="post" class="form-login" id="formulary-login">
+        <form action="/actions/loginaction.php" method="post" class="form-login" id="formulary-login">
         <div class="containerlogin">
         <img class="icono-dev" src="/imgs/dev.jpg" alt="">
          <p>Login</p>

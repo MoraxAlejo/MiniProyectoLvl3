@@ -350,3 +350,22 @@ li:hover {
 label {
   cursor: pointer;
 }
+
+.back-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 650px;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.back-container > :last-child {
+  color: #2D9CDB;
+font-family: Noto Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.63px;
+}
